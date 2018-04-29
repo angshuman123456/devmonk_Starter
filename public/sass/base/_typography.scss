@@ -32,7 +32,9 @@ body {
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
+    overflow: hidden;
     font-weight: 100;
+    width: 98vw;
     &--main {
         display: block;
         font-size: 9rem;

@@ -88,7 +88,9 @@ body {
   color: #fffff4;
   text-transform: uppercase;
   backface-visibility: hidden;
-  font-weight: 100; }
+  overflow: hidden;
+  font-weight: 100;
+  width: 98vw; }
   .heading-primary--main {
     display: block;
     font-size: 9rem;
@@ -195,7 +197,7 @@ body {
 
 .navigation__left {
   padding: 8rem 3rem;
-  width: 50%;
+  width: 49.5%;
   height: 100%;
   float: left;
   background-color: #eee;
@@ -365,7 +367,7 @@ body {
 
 .header {
   position: relative;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), url("../img/page-hero-images/about_us_1.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), url("../img/page-hero-images/about_us.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,6 +380,13 @@ body {
     text-align: center; }
 
 .text-container {
-  padding: 8rem 20rem; }
+  padding: 8rem 30rem; }
   .text-container__paragraph {
     letter-spacing: 0.1rem; }
+
+.section-home {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 10rem;
+  overflow: hidden;
+  background-color: red; }
