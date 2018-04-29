@@ -20,7 +20,8 @@
         z-index: 3000;
         width: 50vw;
         background-color: transparent;
-        overflow: hidden; //    position: relative;
+        overflow: hidden; 
+        // position: relative;
     }
     &__left {
         padding: 8rem 3rem;
@@ -37,7 +38,6 @@
     &__right {
         width: 50%;
         padding: 8rem 3rem;
-        ;
         height: 100%;
         color: $color-white;
         background-color: $color-grey-dark-3;
@@ -47,17 +47,24 @@
         visibility: hidden;
         z-index: 1000;
         position: relative;
+        text-transform: capitalize;
+       
     }
-    &__list {}
-    &__item {}
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        padding: 1rem 2rem;
+    }
     &__link {
         &:link,
         &:visited {
-            span {}
+            text-decoration: none;
+            color: $color-white;
         }
         &:hover,
         &:active {
-            span {}
+            color: $color-white;
         }
     } //FUNcTIONALITY
     &__checkbox:checked~&__nav &__left {
