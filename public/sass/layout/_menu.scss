@@ -1,0 +1,48 @@
+.menu-bar{
+    position: fixed;
+    top: 5rem;
+    
+    width: 100%;
+    background-color: $color-grey-light-2;
+    text-align: center;
+    z-index: 7;
+
+    .menu{
+       
+        padding: .5rem .3rem;
+        list-style: none;
+       
+        
+        &__item{
+            padding: 0;  
+
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+
+        }
+
+        &__link{
+            &:link,
+            &:visited{  
+                text-decoration: none;
+                color: $color-grey-dark-1;
+                text-transform: uppercase;
+                font-size: $default-font-size-small;
+                letter-spacing: 0.08rem;
+                
+            }
+            
+            &:hover,
+            &:active{
+                color: $color-grey-dark-2;
+            }
+        }
+    }
+}
+
+

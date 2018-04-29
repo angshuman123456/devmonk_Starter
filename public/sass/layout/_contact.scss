@@ -1,0 +1,23 @@
+.contact{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2500;
+    width: 25%;
+    text-align: center;
+    background-color: $color-primary;
+    padding: 1rem 3rem;
+
+    &__icon{
+        float: right;
+        font-size: 1.6rem;
+        color:$color-white;
+    }
+    &__text{
+       color:$color-white;
+       text-transform: uppercase;
+       font-size: $default-font-size;
+       letter-spacing: .2rem;
+    }
+
+}

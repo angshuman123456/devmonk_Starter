@@ -1,0 +1,166 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        background-color: transparent;
+        height: 6rem;
+        width: 4.2rem;
+        border-radius: 50%;
+        position: fixed;
+        top: -1rem;
+        left: 3rem;
+        z-index: 2000;
+        text-align: left;
+        cursor: pointer;
+    }
+    &__nav {
+        float: left;
+        height: 100vh;
+        z-index: 3000;
+        width: 50vw;
+        background-color: transparent;
+        overflow: hidden; //    position: relative;
+    }
+    &__left {
+        padding: 8rem 3rem;
+        width: 50%;
+        height: 100%;
+        float: left;
+        background-color: $color-grey-light-2;
+        transform: translateY(-100vh);
+        transition: all 400ms cubic-bezier(.92, 0, .36, .81);
+        visibility: hidden;
+        z-index: 1000;
+        position: relative;
+    }
+    &__right {
+        width: 50%;
+        padding: 8rem 3rem;
+        ;
+        height: 100%;
+        color: $color-white;
+        background-color: $color-grey-dark-3;
+        float: left;
+        transform: translateY(100vh);
+        transition: all 400ms cubic-bezier(.92, 0, .36, .81);
+        visibility: hidden;
+        z-index: 1000;
+        position: relative;
+    }
+    &__list {}
+    &__item {}
+    &__link {
+        &:link,
+        &:visited {
+            span {}
+        }
+        &:hover,
+        &:active {
+            span {}
+        }
+    } //FUNcTIONALITY
+    &__checkbox:checked~&__nav &__left {
+        transform: translateY(0);
+        visibility: visible;
+    }
+    &__checkbox:checked~&__nav &__right {
+        transform: translateY(0);
+        visibility: visible;
+    } //ICON
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+        & {
+            width: .8rem;
+            height: .2rem;
+            background-color: $color-grey-light-1;
+            display: inline-block;
+            transition: width .3s, background-color .2s ease .3s;
+            box-shadow: 0 2rem 5rem rgba($color-black, .1);
+        }
+        &::after {
+            width: 1.6rem;
+            height: .2rem;
+            background-color: $color-grey-light-1;
+            display: inline-block;
+            box-shadow: 0 2rem 5rem rgba($color-black, .1);
+        }
+        &::before {
+            width: 2.4rem;
+            height: .2rem;
+            background-color: $color-grey-light-1;
+            display: inline-block;
+            box-shadow: 0 2rem 5rem rgba($color-black, .1);
+        }
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: width .2s, top .3s ease .2s, transform .3s ease .4s;
+        }
+        &::after {
+            top: .8rem;
+        }
+        &::before {
+            top: -.8rem
+        }
+    }
+    &__button:hover &__icon::before {}
+    &__button:hover &__icon::after {}
+    &__checkbox:checked+&__button &__icon {
+        width: 3rem;
+        background-color: transparent;
+        transition: background-color .3s, width .2s ease .3s;
+    }
+    &__checkbox:checked+&__button &__icon::after {
+        top: 0;
+        width: 3rem;
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked+&__button &__icon::before {
+        top: 0;
+        width: 3rem;
+        transform: rotate(-135deg); // transition: transform .2s, top .3s ease .2s, width  .3s ease .4s;
+    }
+}
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    z-index: 1500;
+    width: 100%;
+    background-color: $color-primary;
+    &__logo-box {
+        display: block;
+        width: 8rem;
+        @include absCenter;
+        padding: 1rem;
+    }
+    &__logo {
+        width: 4rem;
+    }
+}
+
+.social {
+    list-style: none;
+    float: right;
+    margin-right: 3rem;
+    &__item {
+        display: inline-block;
+        padding: 1rem;
+    }
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: white;
+        }
+        &:hover,
+        &:active {
+            color: white;            
+        }
+    }
+}
