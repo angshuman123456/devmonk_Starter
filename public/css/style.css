@@ -11,7 +11,7 @@ html {
 body {
   box-sizing: border-box;
   color: #444444;
-  background-color: #fff; }
+  background-color: #fffff4; }
 
 @keyframes moveInLeft {
   0% {
@@ -88,9 +88,7 @@ body {
   color: #fffff4;
   text-transform: uppercase;
   backface-visibility: hidden;
-  overflow: hidden;
-  font-weight: 100;
-  width: 98vw; }
+  overflow: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 9rem;
@@ -146,6 +144,23 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  .header--about {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), url("../img/page-hero-images/about_us.jpg"); }
+  .header--code-of-conduct {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), url("../img/page-hero-images/about_us.jpg"); }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -188,12 +203,15 @@ body {
   cursor: pointer; }
 
 .navigation__nav {
-  float: left;
+  position: fixed;
+  top: 5rem;
   height: 100vh;
-  z-index: 3000;
+  z-index: 2000;
   width: 50vw;
   background-color: transparent;
-  overflow: hidden; }
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 400ms cubic-bezier(0.92, 0, 0.36, 0.81); }
 
 .navigation__left {
   padding: 8rem 3rem;
@@ -233,6 +251,10 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   color: #fffff4; }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  visibility: visible; }
 
 .navigation__checkbox:checked ~ .navigation__nav .navigation__left {
   transform: translateY(0);
@@ -324,7 +346,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 2500;
+  z-index: 3000;
   width: 25%;
   text-align: center;
   background-color: #07a97d;
@@ -345,7 +367,7 @@ body {
   width: 100%;
   background-color: #eee;
   text-align: center;
-  z-index: 7; }
+  z-index: 1900; }
   .menu-bar .menu {
     padding: .5rem .3rem;
     list-style: none; }
@@ -365,28 +387,12 @@ body {
     .menu-bar .menu__link:hover, .menu-bar .menu__link:active {
       color: #333; }
 
-.header {
-  position: relative;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)), url("../img/page-hero-images/about_us.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
 .text-container {
   padding: 8rem 30rem; }
   .text-container__paragraph {
     letter-spacing: 0.1rem; }
 
 .section-home {
-  width: 100vw;
-  height: 80vh;
-  margin-top: 10rem;
-  overflow: hidden;
-  background-color: red; }
+  height: 91.5vh;
+  background-color: #999;
+  margin-top: 5rem; }

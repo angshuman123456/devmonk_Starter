@@ -6,35 +6,14 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-// .heading-primary{
-//     color: $color-white;
-//     text-transform: uppercase;
-//      backface-visibility: hidden; 
-//     &--main{
-//         display: block;
-//         font-size: 6rem;
-//         font-weight: 400;
-//         letter-spacing: 3.5rem;
-//         animation : moveInLeft  0.8s  ease-out .4s;
-//     }
-//     &--sub{
-//         display: block;
-//         text-decoration: none;
-//         font-size: 1.8rem;
-//         font-weight: 400;
-//         letter-spacing: 1.74rem;
-//         animation: moveInRight .8s  ease-out .4s;
-//         margin-bottom: 3.6rem;
-//     }
-// }
+
 
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     overflow: hidden;
-    font-weight: 100;
-    width: 98vw;
+    
     &--main {
         display: block;
         font-size: 9rem;

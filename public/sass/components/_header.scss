@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; // background-attachment: fixed;
+  height: 100vh;
+  
+  
+  &--about{
+    
+    background-image: linear-gradient(to top, rgba($color-black, 0.45), rgba($color-black, 0.15)), url('../img/page-hero-images/about_us.jpg');
+  }
+  &--code-of-conduct{
+    
+    background-image: linear-gradient(to top, rgba($color-black, 0.45), rgba($color-black, 0.15)), url('../img/page-hero-images/about_us.jpg');
+  }
+
+
+  &__text-box {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
