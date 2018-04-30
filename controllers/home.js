@@ -17,6 +17,9 @@ module.exports = {
         router.get('/advisoryCouncil', this.getAdvisoryCouncil);
         router.get('/careers', this.getCareers);
         router.get('/howHumTreeGrows', this.getHowHumTreeGrows);
+        router.get('/whatIsHumtree', this.getWhatIsHumtree);
+        router.get('/whyHumtree', this.getWhyHumtree);
+        router.get('/howToGrowAHumtree', this.getHowToGrowAHumTree);
     },
     getHomePage: function(req, res) {
         res.render('page/home');
@@ -68,5 +71,14 @@ module.exports = {
     },
     getHowHumTreeGrows: function(req, res) {
         res.render('page/howHumTreeGrows');
+    },
+    getWhatIsHumtree: function(req, res) {
+        res.render('page/whatIsHumtree');
+    },
+    getWhyHumtree: function(req, res) {
+        res.render('page/whyHumtree');
+    },
+    getHowToGrowAHumTree: function(req, res) {
+        res.render('page/howToGrowAHumTree');
     },
 };
