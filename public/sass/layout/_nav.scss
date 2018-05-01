@@ -30,7 +30,7 @@
 
     &__jumbo-item{
         width: 100%;
-        height: calc((100% )/3 ) ;
+        height: calc((100% )/3 + .2rem);
         
         &--1{
             
@@ -122,7 +122,7 @@
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
         }
-    } //FUNcTIONALITY
+    } //FUNCTIONALITY
 
     &__checkbox:checked~&__nav  {
       

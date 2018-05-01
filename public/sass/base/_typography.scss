@@ -78,6 +78,14 @@ body {
         display: inline-block;
         color: $color-white;
     }
+    &--black {
+       font-size: 3.5rem;
+       font-weight: 700;
+       letter-spacing: .6rem;
+       text-transform: uppercase;
+       display: inline-block;
+       color: $color-grey-dark-1;
+    }
 }
 
 .heading-tertiary {
@@ -85,6 +93,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .4rem;
+    color: $color-primary-dark;
+    &--dark {
+        color: $color-grey-dark-3;
+    }
 }
 
 .heading-quad {

@@ -1,7 +1,4 @@
-.section-about{
-  overflow: hidden;
-
-}
+.section-about {}
 
 body::-webkit-scrollbar {
   display: none;
@@ -12,7 +9,35 @@ body::-webkit-scrollbar {
   overflow-y: auto;
 
   &__paragraph {
-    letter-spacing: 0.1rem;
+    letter-spacing: .15rem;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+
+  &__list {
+    letter-spacing: .15rem;
     
   }
+  .text-list {
+    padding: 0 2rem;
+    &__item {
+
+    }
+    &__link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-primary-dark;
+      }
+    }
+  }
+  .text-list--lower-alphabets {
+    list-style-type: lower-alpha;
+  }
+  .text-list--upper-alphabets {
+    list-style-type: upper-alpha;
+  }
 }
+
