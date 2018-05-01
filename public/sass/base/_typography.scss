@@ -65,10 +65,11 @@ body {
     letter-spacing: .6rem;
     text-transform: uppercase;
     display: inline-block;
-    background-image: linear-gradient(to bottom, $color-grey-light-0, $color-grey-dark-1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    // background-image: linear-gradient(to bottom, $color-grey-light-0, $color-grey-dark-1);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    color: $color-primary-dark;
+    
     &--white {
         font-size: 3.5rem;
         font-weight: 700;

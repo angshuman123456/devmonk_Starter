@@ -1,0 +1,43 @@
+.gallery__list{
+    list-style: none;
+    // position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 8rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+
+}
+.gallery__link,.gallery__link:link,.gallery__link:visited{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+}
+.gallery__list-item{
+width:30%;
+height: 22rem;
+float: left;
+display: block;
+margin: 1.1rem;
+box-shadow: 0 .2rem 1rem rgba(0,0,0,0.15);
+border-radius: .3rem;
+overflow: hidden;
+position: relative;
+text-align: center;
+background-color: $color-white;
+
+
+}
+
+.gallery__image{
+width: 50%;
+transition: all .3s ease;
+backface-visibility: hidden;
+
+margin-top: 2rem;
+padding: 1rem;
+
+/*position: relative;*/
+
+}

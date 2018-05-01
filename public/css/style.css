@@ -74,6 +74,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
@@ -129,10 +132,7 @@ body {
   letter-spacing: .6rem;
   text-transform: uppercase;
   display: inline-block;
-  background-image: linear-gradient(to bottom, #e4e4e4, #777);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent; }
+  color: #046d51; }
   .heading-secondary--white {
     font-size: 3.5rem;
     font-weight: 700;
@@ -197,6 +197,41 @@ body {
   width: 100%;
   height: 100%;
   background-color: #046d51; }
+
+.gallery__list {
+  list-style: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-left: 8rem;
+  padding-right: 5rem;
+  padding-bottom: 10rem; }
+
+.gallery__link, .gallery__link:link, .gallery__link:visited {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 100%; }
+
+.gallery__list-item {
+  width: 30%;
+  height: 22rem;
+  float: left;
+  display: block;
+  margin: 1.1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: .3rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: #fffff4; }
+
+.gallery__image {
+  width: 50%;
+  transition: all .3s ease;
+  backface-visibility: hidden;
+  margin-top: 2rem;
+  padding: 1rem;
+  /*position: relative;*/ }
 
 .row {
   max-width: 114rem;
@@ -586,3 +621,11 @@ body::-webkit-scrollbar {
       font-size: 4rem;
       color: #fffff4;
       cursor: pointer; }
+
+.section-projects {
+  background-color: #f7f7f7;
+  margin-top: 9rem; }
+
+.section-verticals {
+  background-color: #f7f7f7;
+  margin-top: 9rem; }
