@@ -3,12 +3,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
       jQuery(document).ready(function($) {
-
+        $('.pause').hide();   
 
 // site preloader -- also uncomment the div in the header and the css style for #preloader
 window.onload = function(){
   $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+  $('.play').click(function(){
+    $('.home-video__content').get(0).play();
+    $('.play').hide();
+    $('.pause').show();    
+  });
+
+  $('.pause').click(function(){
+    $('.home-video__content').get(0).pause();
+    $('.play').show();
+    $('.pause').hide();    
+  });
+
+  $('#hamburger').click(function(){
+    $('.contact').show();
+  });
 }
+
+
+ 
 });
 </script>
+
+<script src="js/purejavascript.js"></script>
 <script src="js/removeFooter.js" type="text/javascript"></script>

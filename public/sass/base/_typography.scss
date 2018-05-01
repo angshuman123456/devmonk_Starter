@@ -6,7 +6,34 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+.heading-primary-home{
+    color: $color-white;
+    text-transform: uppercase;
+     backface-visibility: hidden; 
 
+    &--main{
+        display: block;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 2.5rem;
+    
+        // animation : moveInLeft  0.8s  ease-out .4s;
+     
+    }
+      
+    &--sub{
+        display: block;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.74rem;
+        opacity:0;
+        // animation: moveInRight .8s  ease-out .4s;
+      transition: all .4s ease-out .25s;
+        margin-bottom: 3.6rem;
+    }
+
+}
 
 .heading-primary {
     color: $color-white;
