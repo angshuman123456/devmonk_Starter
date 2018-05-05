@@ -236,15 +236,31 @@ body {
   overflow: hidden;
   position: relative;
   text-align: center;
-  background-color: #fffff4; }
+  background-color: #fffff4;
+  padding: 2rem; }
 
 .gallery__image {
-  width: 50%;
+  width: 100%;
   transition: all .3s ease;
   backface-visibility: hidden;
-  margin-top: 2rem;
   padding: 1rem;
   /*position: relative;*/ }
+
+.gallery__image--size-full {
+  width: 100%;
+  height: auto; }
+
+.gallery__image--size-quater {
+  width: 75%;
+  height: auto; }
+
+.gallery__image--size-half {
+  width: 50%;
+  height: auto; }
+
+.gallery__image--size-small {
+  width: 25%;
+  height: auto; }
 
 .row {
   max-width: 114rem;
