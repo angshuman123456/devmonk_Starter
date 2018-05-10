@@ -71,7 +71,7 @@
         }
         
         &:hover &-header--1 {
-            transition: all 100ms ease-out;
+            transition: transform 200ms ease-out;
             transform: translateY(5%);
         }
 

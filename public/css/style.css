@@ -348,7 +348,7 @@ body {
     border-bottom: 0.3rem solid #fffff4;
     color: #fffff4; }
   .navigation__jumbo-item:hover .navigation__jumbo-item-header--1 {
-    transition: all 100ms ease-out;
+    transition: transform 200ms ease-out;
     transform: translateY(5%); }
   .navigation__jumbo-item:hover .navigation__jumbo-item-header--2 {
     -webkit-transition: transform 100ms ease-out;
