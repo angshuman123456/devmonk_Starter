@@ -332,6 +332,8 @@ body {
     .navigation__jumbo-item-header--1 {
       transform: translateY(-90%);
       position: absolute; }
+    .navigation__jumbo-item-header--2 {
+      -webkit-transition: transform 200ms ease-out; }
   .navigation__jumbo-item__background-image {
     transition: all 600ms ease-out;
     width: 100%;
@@ -346,9 +348,10 @@ body {
     border-bottom: 0.3rem solid #fffff4;
     color: #fffff4; }
   .navigation__jumbo-item:hover .navigation__jumbo-item-header--1 {
-    transition: all 200ms ease-out;
+    transition: all 100ms ease-out;
     transform: translateY(5%); }
   .navigation__jumbo-item:hover .navigation__jumbo-item-header--2 {
+    -webkit-transition: transform 100ms ease-out;
     transform: translateY(100%); }
 
 .navigation__left {
@@ -574,7 +577,7 @@ body {
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.5s ease-in-out 20ms; }
     .menu-bar .menu__link:hover, .menu-bar .menu__link:active {
-      color: #333; }
+      color: #252525; }
     .menu-bar .menu__link:hover:before, .menu-bar .menu__link:active:before {
       visibility: visible;
       -webkit-transform: scaleX(1);

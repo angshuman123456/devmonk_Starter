@@ -48,7 +48,8 @@
                 position: absolute;
             }
             &--2 {
-                // transform: translateY(100%);                
+                // transform: translateY(100%);
+                -webkit-transition: transform 200ms ease-out;
             }      
         }
         &__background-image {
@@ -70,11 +71,12 @@
         }
         
         &:hover &-header--1 {
-            transition: all 200ms ease-out;
+            transition: all 100ms ease-out;
             transform: translateY(5%);
         }
 
         &:hover &-header--2 {
+            -webkit-transition: transform 100ms ease-out;            
             transform: translateY(100%);
         }
     }
