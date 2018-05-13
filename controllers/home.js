@@ -7,13 +7,12 @@ module.exports = {
         router.get('/projects', this.getProjects);
         router.get('/stories', this.getStories);
         router.get('/mosaic', this.getMosaic);
-        router.get('/vissionMission', this.getVissionMission);
+        router.get('/visionMission', this.getVisionMission);
         router.get('/events', this.getEvents);
         router.get('/brochure', this.getBrochure);
         router.get('/team', this.getTeam);
         router.get('/membership', this.getMembership);
         router.get('/rulesOfReimbursement', this.getRulesOfReimbursement);
-        router.get('/managementCommittee', this.getManagementCommittee);
         router.get('/advisoryCouncil', this.getAdvisoryCouncil);
         router.get('/careers', this.getCareers);
         router.get('/howHumTreeGrows', this.getHowHumTreeGrows);
@@ -42,8 +41,8 @@ module.exports = {
     getMosaic: function(req, res) {
         res.render('page/mosaic');
     },
-    getVissionMission: function(req, res) {
-        res.render('page/vissionMission');
+    getVisionMission: function(req, res) {
+        res.render('page/visionMission');
     },
     getEvents: function(req, res) {
         res.render('page/events');
@@ -59,9 +58,6 @@ module.exports = {
     },
     getRulesOfReimbursement: function(req, res) {
         res.render('page/rulesOfReimbursement');
-    },
-    getManagementCommittee: function(req, res) {
-        res.render('page/managementCommittee');
     },
     getAdvisoryCouncil: function(req, res) {
         res.render('page/advisoryCouncil');
