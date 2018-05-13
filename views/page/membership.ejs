@@ -4,42 +4,147 @@
   <h4 class="membership__sub-header">become a part of the revolution</h4>
 </div>
 <div class="form">
+  <div class="form__tabs">
+    <a href="#">
+      <div class="tab">
+        <span class="tab--with-border student">
+          Student
+          <input type="radio" name="studentRadio" class="form__radio radio--student" checked>
+        </span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="tab">
+        <span class="tab--with-border professional">
+          Professional
+          <input type="radio" name="professionRadio" class="form__radio radio--professional">
+        </span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="tab">
+        <span class="tab--without-border college">
+          College
+          <input type="radio" name="collegeRadio" class="form__radio radio--college">
+        </span>
+      </div>
+    </a>
+  </div>
   <div class="form__container">
-    <div class="form-style-5">
+    <div class="form--style student-professional">
       <form>
         <fieldset>
           <legend>
           <span class="number">1</span> Candidate Info</legend>
-          <input type="text" name="field1" placeholder="Your Name *">
-          <input type="email" name="field2" placeholder="Your Email *">
-          <textarea name="field3" placeholder="About yourself"></textarea>
-          <label for="job">Interests:</label>
-          <select id="job" name="field4">
-            <optgroup label="Indoors">
-              <option value="fishkeeping">Fishkeeping</option>
-              <option value="reading">Reading</option>
-              <option value="boxing">Boxing</option>
-              <option value="debate">Debate</option>
-              <option value="gaming">Gaming</option>
-              <option value="snooker">Snooker</option>
-              <option value="other_indoor">Other</option>
-            </optgroup>
-            <optgroup label="Outdoors">
-              <option value="football">Football</option>
-              <option value="swimming">Swimming</option>
-              <option value="fishing">Fishing</option>
-              <option value="climbing">Climbing</option>
-              <option value="cycling">Cycling</option>
-              <option value="other_outdoor">Other</option>
-            </optgroup>
+          <input type="text" name="name" placeholder="Name *">
+          <textarea name="address" placeholder="Residential Address *"></textarea>
+          <input type="text" name="homeTown" placeholder="Home Town *">
+          <input type="text" name="areaOfExpertise" placeholder="Area Of Expertise *">
+          <input type="number" name="phone" placeholder="Contact Number *">
+          <input type="email" name="email" placeholder="Email *">
+          <input type="text" name="college" placeholder="College/School/Institution/Company">
+          <textarea name="collegeWithAddress" placeholder="College/School/Institution/Company (With Address)"></textarea>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Other">Other</option>
           </select>
         </fieldset>
         <fieldset>
           <legend>
-            <span class="number">2</span> Additional Info</legend>
-          <textarea name="field3" placeholder="About Your School"></textarea>
+            <span class="number">2</span> Documents Provided</legend>
+            <label for="id">Id Proof:</label>
+            <select id="id" name="id">
+              <option value="license">License</option>
+              <option value="bill">Bill</option>
+              <option value="idCard">Identity Card</option>
+              <option value="adhaar">Adhaar</option>
+            </select>
         </fieldset>
-        <input type="submit" value="Apply" />
+        <input type="file">
+        <label for="marksheet">10th Marksheet:</label>
+        <input id="marksheet" type="file">
+        <input type="submit" value="Apply" class="field7">
+      </form>
+    </div>
+  </div>
+  <!-- Collge form -->
+  <div class="form__container college-form">
+    <div class="form--style">
+      <form>
+        <fieldset>
+          <legend>
+          <span class="number">1</span> College Info</legend>
+          <input type="text" name="clgName" placeholder="College Name *">
+          <textarea name="clgAddress" placeholder="College Address *"></textarea>
+          <div>
+            <div class="form__element--width-50">
+              <input type="text" name="clgCity" placeholder="City *">
+            </div>
+            <div class="form__element--width-50 form__element--width-50--1">
+              <input type="text" name="clgState" placeholder="State *">
+            </div>
+          </div>
+          <input type="text" name="clgPincode" placeholder="Pincode">
+          <input type="text" name="clgWebPage" placeholder="Website">
+          <input type="text" name="clgAttachedToUniversity" placeholder="Attached To University">
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">2</span> Programs Offered By College </legend>
+          <input type="text" name="clgPrg" placeholder="Program" class="prg-1">
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">3</span> Faculty Advisor Information </legend>
+          <input type="text" name="fName" placeholder="Name *">
+          <input type="text" name="fDesignaton" placeholder="Designation *">
+          <input type="text" name="fDepartment" placeholder="Department *">
+          <textarea name="fAddress" placeholder="Residential Address *"></textarea>
+          <div>
+            <div class="form__element--width-50">
+              <input type="text" name="fCity" placeholder="City *">
+            </div>
+            <div class="form__element--width-50 form__element--width-50--1">
+              <input type="text" name="fState" placeholder="State *">
+            </div>
+          </div>
+          <input type="text" name="fPincode" placeholder="Pincode *">
+          <div>
+            <div class="form__element--width-50">
+              <input type="number" name="mobile" placeholder="Mobile *">
+            </div>
+            <div class="form__element--width-50 form__element--width-50--1">
+              <input type="number" name="phone" placeholder="Phone *">
+            </div>
+          </div>
+          <input type="email" name="email" placeholder="Email *">
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">4</span> Additional Faculty Advisor Information </legend>
+          <input type="text" name="fName" placeholder="Name *">
+          <input type="text" name="fDesignaton" placeholder="Designation *">
+          <input type="text" name="fDepartment" placeholder="Department *">
+          <textarea name="fAddress" placeholder="Residential Address *"></textarea>
+          <div>
+            <div class="form__element--width-50">
+              <input type="text" name="fCity" placeholder="City *">
+            </div>
+            <div class="form__element--width-50 form__element--width-50--1">
+              <input type="text" name="fState" placeholder="State *">
+            </div>
+          </div>
+          <input type="text" name="fPincode" placeholder="Pincode *">
+          <div>
+            <div class="form__element--width-50">
+              <input type="number" name="mobile" placeholder="Mobile *">
+            </div>
+            <div class="form__element--width-50 form__element--width-50--1">
+              <input type="number" name="phone" placeholder="Phone *">
+            </div>
+          </div>
+          <input type="email" name="email" placeholder="Email *">
+        </fieldset>
+        <input type="submit" value="Apply" class="submit-btn">
       </form>
     </div>
   </div>
