@@ -122,17 +122,51 @@
      }
   }
 
+  .college-form {
+    display: none;
+  }
+
+  .professional-form {
+    display: none;
+  }
+
   &__radio {
     display: none;
+
+    &--professional:checked+input+div {
+      display: none;
+    }
+    
+    &--professional:checked+input+div+div {
+      display: block;
+    }
+    
+    &--professional:checked+input+div+div+div {
+      display: none;
+    }
+
+    // if college is checked 
+    &--college:checked+div {
+      display: none;
+    }
+
+    &--college:checked+div+div {
+      display: none;
+    }
+  
+    &--college:checked+div+div+div[class="form__container college-form"] {
+      display: block;
+    }
   }
 }
 
 .tab {
-  display: inline-block;
   padding: 0.1rem;
   color: $color-dark-grey;
+  display: inline-block;
   
   &--with-border {
+    display: block;
     letter-spacing: 0.3rem;
     border-right: 0.3rem solid $color-dark-grey;
     padding-right: 0.5rem;
@@ -145,3 +179,6 @@
   }
 }
 
+label {
+  cursor: pointer;
+}

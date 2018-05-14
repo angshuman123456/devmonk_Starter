@@ -434,14 +434,31 @@ body {
     padding: 0.5rem; }
     .form__element--width-50--1 {
       float: right; }
+  .form .college-form {
+    display: none; }
+  .form .professional-form {
+    display: none; }
   .form__radio {
     display: none; }
+    .form__radio--professional:checked + input + div {
+      display: none; }
+    .form__radio--professional:checked + input + div + div {
+      display: block; }
+    .form__radio--professional:checked + input + div + div + div {
+      display: none; }
+    .form__radio--college:checked + div {
+      display: none; }
+    .form__radio--college:checked + div + div {
+      display: none; }
+    .form__radio--college:checked + div + div + div[class="form__container college-form"] {
+      display: block; }
 
 .tab {
-  display: inline-block;
   padding: 0.1rem;
-  color: #444444; }
+  color: #444444;
+  display: inline-block; }
   .tab--with-border {
+    display: block;
     letter-spacing: 0.3rem;
     border-right: 0.3rem solid #444444;
     padding-right: 0.5rem;
@@ -449,6 +466,9 @@ body {
   .tab--without-border {
     letter-spacing: 0.3rem;
     padding-left: 0.5rem; }
+
+label {
+  cursor: pointer; }
 
 .row {
   max-width: 114rem !important;

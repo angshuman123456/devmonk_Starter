@@ -5,33 +5,27 @@
 </div>
 <div class="form">
   <div class="form__tabs">
-    <a href="#">
-      <div class="tab">
-        <span class="tab--with-border student">
-          Student
-          <input type="radio" name="studentRadio" class="form__radio radio--student" checked>
-        </span>
-      </div>
-    </a>
-    <a href="#">
-      <div class="tab">
-        <span class="tab--with-border professional">
-          Professional
-          <input type="radio" name="professionRadio" class="form__radio radio--professional">
-        </span>
-      </div>
-    </a>
-    <a href="#">
-      <div class="tab">
-        <span class="tab--without-border college">
-          College
-          <input type="radio" name="collegeRadio" class="form__radio radio--college">
-        </span>
-      </div>
-    </a>
+    <div class="tab">
+      <span class="tab--with-border">
+        <label for="radio-stu">Student</label>
+      </span>
+    </div>
+    <div class="tab">
+      <span class="tab--with-border professional">
+        <label for="radio-pro">Professional</label>
+      </span>
+    </div>
+    <div class="tab">
+      <span class="tab--without-border college">
+        <label for="radio-col">College</label>
+      </span>
+    </div>
   </div>
-  <div class="form__container">
-    <div class="form--style student-professional">
+  <input id="radio-stu" type="radio" name="selectFormRadio" class="form__radio form__radio--student" checked>          
+  <input id="radio-pro" type="radio" name="selectFormRadio" class="form__radio form__radio--professional">          
+  <input id="radio-col" type="radio" name="selectFormRadio" class="form__radio form__radio--college">
+  <div class="form__container student-form">
+    <div class="form--style">
       <form>
         <fieldset>
           <legend>
@@ -39,10 +33,46 @@
           <input type="text" name="name" placeholder="Name *">
           <textarea name="address" placeholder="Residential Address *"></textarea>
           <input type="text" name="homeTown" placeholder="Home Town *">
-          <input type="text" name="areaOfExpertise" placeholder="Area Of Expertise *">
           <input type="number" name="phone" placeholder="Contact Number *">
           <input type="email" name="email" placeholder="Email *">
           <input type="text" name="college" placeholder="College/School/Institution/Company">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <span class="number">2</span> Documents Provided</legend>
+            <label for="id">Id Proof:</label>
+            <select id="id" name="id">
+              <option value="license">License</option>
+              <option value="bill">Bill</option>
+              <option value="idCard">Identity Card</option>
+              <option value="adhaar">Adhaar</option>
+            </select>
+        </fieldset>
+        <input type="file">
+        <label for="marksheet">10th Marksheet:</label>
+        <input id="marksheet" type="file">
+        <input type="submit" value="Apply" class="field7">
+      </form>
+    </div>
+  </div>
+  <!-- Professional Form -->
+  <div class="form__container professional-form">
+    <div class="form--style">
+      <form>
+        <fieldset>
+          <legend>
+          <span class="number">1</span> Candidate Info</legend>
+          <input type="text" name="name" placeholder="Name *">
+          <textarea name="address" placeholder="Residential Address *"></textarea>
+          <input type="text" name="areaOfExpertise" placeholder="Area Of Expertise *">
+          <input type="number" name="phone" placeholder="Contact Number *">
+          <input type="email" name="email" placeholder="Email *">
           <textarea name="collegeWithAddress" placeholder="College/School/Institution/Company (With Address)"></textarea>
           <label for="gender">Gender:</label>
           <select id="gender" name="gender">
