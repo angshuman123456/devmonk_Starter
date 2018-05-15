@@ -1,6 +1,6 @@
 .form {
   padding: 4rem;
-
+  
   &__container {
     margin: 0 auto;
   }
@@ -12,6 +12,18 @@
     padding: 2rem;
     background: $color-grey-light-1;
     border-radius: 0.8rem;
+    ::-webkit-input-placeholder {
+      font-family: Lato;
+    }
+    :-moz-placeholder {
+        font-family: Lato;
+    }
+    ::-moz-placeholder {
+        font-family: Lato;
+    }
+    :-ms-input-placeholder {
+        font-family: Lato;
+    }
   }
   
   &--style fieldset {
@@ -110,7 +122,13 @@
   }
 
   &__tabs {
-    margin-left: 10%; 
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    display: table;
+    & > div {
+      display: table-cell;
+    }
   }
 
   &__element--width-50 {
@@ -164,6 +182,7 @@
   padding: 0.1rem;
   color: $color-dark-grey;
   display: inline-block;
+  align-content: center;
   
   &--with-border {
     display: block;

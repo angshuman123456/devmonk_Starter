@@ -349,6 +349,14 @@ body {
     padding: 2rem;
     background: #f7f7f7;
     border-radius: 0.8rem; }
+    .form--style ::-webkit-input-placeholder {
+      font-family: Lato; }
+    .form--style :-moz-placeholder {
+      font-family: Lato; }
+    .form--style ::-moz-placeholder {
+      font-family: Lato; }
+    .form--style :-ms-input-placeholder {
+      font-family: Lato; }
   .form--style fieldset {
     border: none; }
   .form--style legend {
@@ -427,7 +435,12 @@ body {
   .form--style input[type="button"]:hover {
     background: #07a97d; }
   .form__tabs {
-    margin-left: 10%; }
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    display: table; }
+    .form__tabs > div {
+      display: table-cell; }
   .form__element--width-50 {
     display: inline-block;
     width: 50%;
@@ -456,7 +469,8 @@ body {
 .tab {
   padding: 0.1rem;
   color: #444444;
-  display: inline-block; }
+  display: inline-block;
+  align-content: center; }
   .tab--with-border {
     display: block;
     letter-spacing: 0.3rem;
@@ -469,6 +483,101 @@ body {
 
 label {
   cursor: pointer; }
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 4000; }
+  #modal-container.one {
+    transform: scaleY(0.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    #modal-container.one .modal-background .modal {
+      transform: scale(0);
+      animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    #modal-container.one.out {
+      transform: scale(1);
+      animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+      #modal-container.one.out .modal-background .modal {
+        animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+  #modal-container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    vertical-align: middle; }
+    #modal-container .modal-background .modal {
+      background: #fffff4;
+      padding: 5rem;
+      display: inline-block;
+      border-radius: 0.3rem;
+      font-weight: 300;
+      position: relative; }
+      #modal-container .modal-background .modal .modal-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0.3rem; }
+        #modal-container .modal-background .modal .modal-svg rect {
+          stroke: #fffff4;
+          stroke-width: 0.2rem;
+          stroke-dasharray: 778;
+          stroke-dashoffset: 778; }
+
+.content {
+  min-height: 100%;
+  height: 100%;
+  background: #fffff4;
+  position: relative;
+  z-index: 0; }
+
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  margin: 1rem;
+  font-size: 1.8rem;
+  background-color: #f7f7f7;
+  border-radius: 0.3rem;
+  color: #252525;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+  cursor: pointer; }
+  .button:hover {
+    color: #fffff4;
+    background: #07a97d; }
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0); }
+  50% {
+    transform: scaleY(0.005) scaleX(1); }
+  100% {
+    transform: scaleY(1) scaleX(1); } }
+
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1); }
+  50% {
+    transform: scaleY(0.005) scaleX(1); }
+  100% {
+    transform: scaleY(0.005) scaleX(0); } }
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
 
 .row {
   max-width: 114rem !important;

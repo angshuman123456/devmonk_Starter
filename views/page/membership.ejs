@@ -1,24 +1,106 @@
 <% layout('Boilerplate.ejs') %>
+<div id="modal-container">
+  <div class="modal-background">
+    <div class="modal">
+      <div class="content">
+        <h3 class="heading-tertiary">Membership Details for Planting a HUM Tree: </h3>
+        <div class="text-container__list u-margin-top-small">
+          <ol class="text-list">
+            <li class="text-list__item">
+              Minimum of 10 students are required to start a club. There is NO upper limit. Some Clubs have more than 500 student members.
+            </li>
+            <li class="text-list__item">
+                Minimum of Two faculty members must come forward to work as FACULTY ADVISERS. They also must join HUM as professional members.
+            </li>
+            <li class="text-list__item">
+                Each student pays Rs.500/- as annual Membership fee.
+            </li>
+            <li class="text-list__item">
+                Students can also join the 4+1 scheme & enrol themselves till one year after the
+                passing out year. The student 4+1 enrolment scheme is as follows:
+                <ul class="text-list">
+                    <li class="text-list__item">
+                      4+1 – 1 st  Year Student 400 x 4 + 200 = Rs.1,800/-
+                    </li>
+                    <li class="text-list__item">
+                      3+1 - 2 nd  Year Student 450 x 3 + 200 = Rs.1,550/-
+                    </li>
+                    <li class="text-list__item">
+                      2+1 - 3 rd  Year Student 500 x 2 + 200 = Rs.1,200/-
+                    </li>
+                    <li class="text-list__item">
+                      1+1 - 4 th  Year Student 500 x 1 + 200 = Rs.700/-
+                    </li>
+                    <li class="text-list__item">
+                      Annual Membership 500 x 1 = Rs.500/-
+                    </li>
+                </ul>
+            </li>
+            <li class="text-list__item">
+              The membership card will be valid for a period of which the member is paying the
+              subscriptions as stated above.
+            </li>
+            <li class="text-list__item">
+              The Chapters gets a substantial monetary benefit if members opt for the 4+1
+              scheme. If the Institution collects Rs 1,800/- during the first year, there is no further
+              need for the collection process till the student passes out. The student also gets an
+              additional year as benefit.
+            </li>
+            <li class="text-list__item">
+              Faculty Advisor Fees: Rs.2,000/- (to be paid once the chapter is established,
+              applicable for next 2 years)
+            </li>
+            <li class="text-list__item">
+              If the advisor wants to continue with his Professional Membership, Annual Fee will
+              be Rs.1,000/-.
+            </li>
+            <li class="text-list__item">
+              Membership for Students always start on 1st February and lasts till 31st January
+              irrespective of the date of commencement.
+            </li>
+            <li class="text-list__item">
+              Fee amount may also be sent in a single Bank DD/Cheque drawn in favour of HUM
+              KALAKAAR FOUNDATION payable at Gwalior. Online transfer can also be done.
+            </li>
+            <li class="text-list__item">
+              All applications (except excel sheet) and the DD to be sent to HUM Foundation’s
+              office at Gwalior for processing. Processing time takes 30 working days. Membership
+              cards of faculties, Students cards, receipt, and club acknowledgement letter will be
+              sent after 10 days to the college address in the name of the faculty. For all
+              communications, faculty member of the respective club will be contacted.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <img src="img/modal.svg" alt="">
+    </div>
+  </div>
+</div>
 <div class="membership">
   <h1 class="membership__header">membership plans</h1>
   <h4 class="membership__sub-header">become a part of the revolution</h4>
 </div>
 <div class="form">
   <div class="form__tabs">
-    <div class="tab">
-      <span class="tab--with-border">
-        <label for="radio-stu">Student</label>
-      </span>
+    <div>
+      <div class="tab">
+        <span class="tab--with-border">
+          <label for="radio-stu">Student</label>
+        </span>
+      </div>
+      <div class="tab">
+        <span class="tab--with-border professional">
+          <label for="radio-pro">Professional</label>
+        </span>
+      </div>
+      <div class="tab">
+        <span class="tab--without-border college">
+          <label for="radio-col">College</label>
+        </span>
+      </div>
     </div>
-    <div class="tab">
-      <span class="tab--with-border professional">
-        <label for="radio-pro">Professional</label>
-      </span>
-    </div>
-    <div class="tab">
-      <span class="tab--without-border college">
-        <label for="radio-col">College</label>
-      </span>
+    <div>
+      <a href="#" id="one" class="button">Pricing</a>  
     </div>
   </div>
   <input id="radio-stu" type="radio" name="selectFormRadio" class="form__radio form__radio--student" checked>          
