@@ -148,33 +148,59 @@
     display: none;
   }
 
+  .membership-cards {
+    display: none;
+  }
+
   &__radio {
     display: none;
 
-    &--professional:checked+input+div {
+    &--professional:checked+input+input+div {
       display: none;
     }
     
-    &--professional:checked+input+div+div {
+    &--professional:checked+input+input+div+div {
       display: block;
     }
     
-    &--professional:checked+input+div+div+div {
+    &--professional:checked+input+input+div+div+div {
       display: none;
     }
 
     // if college is checked 
-    &--college:checked+div {
+    &--college:checked+input+div {
       display: none;
     }
 
-    &--college:checked+div+div {
+    &--college:checked+input+div+div {
       display: none;
     }
   
-    &--college:checked+div+div+div[class="form__container college-form"] {
+    &--college:checked+input+div+div+div {
       display: block;
     }
+
+    &--college:checked+input+div+div+div+div {
+      display: none;
+    }
+
+    // if membership is checked
+    &--membership:checked+div {
+      display: none;
+    }
+
+    &--membership:checked+div+div {
+      display: none;
+    }
+    
+    &--membership:checked+div+div+div {
+      display: none;
+    }
+    
+    &--membership:checked+div+div+div+div {
+      display: block;
+    }
+
   }
 }
 
@@ -200,4 +226,36 @@
 
 label {
   cursor: pointer;
+}
+
+.membership-button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+.rupee {
+  &--symbol {
+    position: absolute;
+    top: 3rem;
+    color: $color-primary;
+    font-size: 3rem; 
+    left: 0.6rem;
+    &--threeDigit {
+      left: -0.2rem;
+    }
+  }
+  
+  &--amount {
+    font-size: 7rem;
+    font-weight: 100;
+  }
+  &--decimal {
+    color: $color-primary;
+  }
+  &--afterDecimal {
+    font-size: 7rem;    
+    font-weight: 100;
+  }
 }

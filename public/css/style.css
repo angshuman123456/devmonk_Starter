@@ -296,13 +296,24 @@ body {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 30rem;
   height: 50rem;
   margin: auto;
   text-align: center;
   color: #000;
   line-height: 3.5rem;
-  position: relative; }
+  position: relative;
+  background: #e4e4e4; }
+  .card--pricing {
+    height: 55rem; }
+  .card--pricing-content-container {
+    padding: 3rem;
+    color: #777;
+    font-size: 1.4rem; }
+    .card--pricing-content-container p {
+      padding: 1.5rem 0; }
+    .card--pricing-content-container p:not(:last-child) {
+      border-bottom: 0.2px solid #777; }
   .card__container {
     padding: 2rem; }
   .card__title {
@@ -311,14 +322,21 @@ body {
     letter-spacing: 0.1rem;
     padding-top: 1.5rem;
     line-height: 4rem; }
+    .card__title--pricing {
+      padding-top: 5rem;
+      font-size: 5rem;
+      position: relative; }
   .card__image {
     width: 100%; }
   .card__heading {
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     position: relative; }
+    .card__heading--pricing {
+      font-weight: 700;
+      font-size: 1.6rem; }
     .card__heading::after {
       content: " ";
       height: 0.2rem;
@@ -328,6 +346,8 @@ body {
       bottom: -0.5rem;
       left: 50%;
       transform: translateX(-50%); }
+    .card__heading--pricing::after {
+      display: none; }
   .card__links {
     background-color: #333;
     position: absolute;
@@ -451,19 +471,31 @@ body {
     display: none; }
   .form .professional-form {
     display: none; }
+  .form .membership-cards {
+    display: none; }
   .form__radio {
     display: none; }
-    .form__radio--professional:checked + input + div {
+    .form__radio--professional:checked + input + input + div {
       display: none; }
-    .form__radio--professional:checked + input + div + div {
+    .form__radio--professional:checked + input + input + div + div {
       display: block; }
-    .form__radio--professional:checked + input + div + div + div {
+    .form__radio--professional:checked + input + input + div + div + div {
       display: none; }
-    .form__radio--college:checked + div {
+    .form__radio--college:checked + input + div {
       display: none; }
-    .form__radio--college:checked + div + div {
+    .form__radio--college:checked + input + div + div {
       display: none; }
-    .form__radio--college:checked + div + div + div[class="form__container college-form"] {
+    .form__radio--college:checked + input + div + div + div {
+      display: block; }
+    .form__radio--college:checked + input + div + div + div + div {
+      display: none; }
+    .form__radio--membership:checked + div {
+      display: none; }
+    .form__radio--membership:checked + div + div {
+      display: none; }
+    .form__radio--membership:checked + div + div + div {
+      display: none; }
+    .form__radio--membership:checked + div + div + div + div {
       display: block; }
 
 .tab {
@@ -483,6 +515,32 @@ body {
 
 label {
   cursor: pointer; }
+
+.membership-button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block; }
+
+.rupee--symbol {
+  position: absolute;
+  top: 3rem;
+  color: #07a97d;
+  font-size: 3rem;
+  left: 0.6rem; }
+  .rupee--symbol--threeDigit {
+    left: -0.2rem; }
+
+.rupee--amount {
+  font-size: 7rem;
+  font-weight: 100; }
+
+.rupee--decimal {
+  color: #07a97d; }
+
+.rupee--afterDecimal {
+  font-size: 7rem;
+  font-weight: 100; }
 
 #modal-container {
   position: fixed;
@@ -507,7 +565,8 @@ label {
   #modal-container .modal-background {
     display: table-cell;
     background: rgba(0, 0, 0, 0.8);
-    vertical-align: middle; }
+    vertical-align: middle;
+    text-align: center; }
     #modal-container .modal-background .modal {
       background: #fffff4;
       padding: 5rem;
@@ -547,6 +606,12 @@ label {
   color: #252525;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
   cursor: pointer; }
+  .button--full {
+    width: 50%;
+    margin: 0;
+    border-radius: 2rem;
+    margin: 1rem;
+    font-size: 1.4rem; }
   .button:hover {
     color: #fffff4;
     background: #07a97d; }
@@ -578,6 +643,72 @@ label {
     transform: scale(1); }
   100% {
     transform: scale(0); } }
+
+.events-container {
+  width: 100rem;
+  height: 26rem;
+  margin-top: 15rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.event-details {
+  width: 60%;
+  background: #f7f7f7;
+  float: left;
+  height: 100%; }
+  .event-details__event-date {
+    text-align: center;
+    background: #999;
+    color: #f7f7f7;
+    padding: 0.2rem;
+    font-size: 1.8rem; }
+  .event-details__event-name-desc {
+    text-align: left;
+    margin-bottom: 5rem; }
+
+.event-links {
+  text-align: left;
+  padding-left: 6rem; }
+  .event-links a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #333; }
+
+.event-name {
+  padding-left: 6rem;
+  letter-spacing: 0.4rem;
+  margin-top: 3rem;
+  font-weight: 300;
+  font-size: 4rem;
+  text-transform: uppercase; }
+
+.event-desc {
+  padding-left: 6rem;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase; }
+  .event-desc__sub-desc {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #777; }
+
+.event-image {
+  width: 40%;
+  float: left; }
+  .event-image::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .event-image--card__image {
+    max-height: 26rem;
+    width: 100%; }
+
+.event__time {
+  padding-right: 1rem;
+  border-right: 0.2rem solid #f7f7f7; }
+
+.event__date {
+  padding-left: 1rem; }
 
 .row {
   max-width: 114rem !important;

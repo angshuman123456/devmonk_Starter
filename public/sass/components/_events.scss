@@ -1,0 +1,79 @@
+.events-container {
+  width: 100rem;
+  height: 26rem;
+  margin-top: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-details {
+  width: 60%;
+  background: $color-grey-light-1;
+  float: left;
+  height: 100%;
+  
+  &__event-date {
+    text-align: center;
+    background: $color-grey-light-3;
+    color: $color-grey-light-1;
+    padding: 0.2rem;
+    font-size: 1.8rem;
+  }
+  
+  &__event-name-desc {
+    text-align: left;
+    margin-bottom: 5rem; 
+  }
+}
+
+.event-links {
+  text-align: left;
+  padding-left: 6rem;
+
+  & a {
+    padding: 1rem;
+    text-decoration: none;
+    color: $color-grey-dark-2;
+  }
+}
+
+.event-name {
+  padding-left: 6rem; 
+  letter-spacing: 0.4rem;
+  margin-top: 3rem; 
+  font-weight: 300;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.event-desc {
+  padding-left: 6rem; 
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  &__sub-desc {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid $color-grey-dark-1;
+  }
+}
+
+.event-image {
+  @include clearfix;
+  width: 40%;
+  float: left;
+
+  &--card__image {
+    max-height: 26rem;
+    width: 100%;
+  }
+}
+
+.event__time {
+  padding-right: 1rem;
+  border-right: 0.2rem solid $color-grey-light-1;
+}
+
+.event__date {
+  padding-left: 1rem;
+}
