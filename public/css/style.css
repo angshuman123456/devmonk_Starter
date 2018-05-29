@@ -1158,3 +1158,24 @@ body::-webkit-scrollbar {
 .section-verticals {
   background-color: #f7f7f7;
   margin-top: 9rem; }
+
+.filters {
+  text-align: center; }
+
+/* clear fix */
+.grid {
+  width: 114rem;
+  margin: 0 auto; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .element-item ---- */
+.grid-item {
+  position: relative;
+  float: left;
+  width: 30rem;
+  height: 50rem;
+  margin: 3rem 3rem; }
