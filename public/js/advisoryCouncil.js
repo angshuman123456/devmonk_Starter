@@ -13,8 +13,3 @@ $('.gwalior-btn').click(function(e) {
   e.preventDefault();
   $('.grid').isotope({filter: '.gwalior'});
 });
-
-$('.hummits-btn').click(function(e) {
-  e.preventDefault();
-  $('.grid').isotope({filter: '.HUMMITS'});
-});

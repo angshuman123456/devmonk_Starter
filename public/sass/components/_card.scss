@@ -36,7 +36,11 @@
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
     padding-top: 1.5rem;
-    line-height: 4rem;
+    line-height: 3rem;
+
+    &--small {
+      line-height: 2rem;
+    }
 
     &--pricing {
       padding-top: 5rem;      

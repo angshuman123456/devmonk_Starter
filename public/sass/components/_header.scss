@@ -31,7 +31,7 @@
   }
 
   &--rules-of-reimbursement {
-    background-image: linear-gradient(to top, rgba($color-black, 0.7), rgba($color-black, 0.45)), url('../img/page-hero-images/rules-of-reimbursement.jpg');
+    background-image: linear-gradient(to top, rgba($color-black, 0.7), rgba($color-black, 0.45)), url('../img/page-hero-images/Reimbursement.jpeg');
   }
 
   &--how-humtree-grows {
@@ -40,6 +40,10 @@
 
   &--how-to-plant-a-humtree {
     background-image: linear-gradient(to top, rgba($color-black, 0.7), rgba($color-black, 0.25)), url('../img/page-hero-images/how-to-plant-a-humtree.jpg');
+  }
+
+  &--team {
+    background-image: linear-gradient(to top, rgba($color-black, 0.7), rgba($color-black, 0.25)), url('../img/page-hero-images/team.jpg');
   }
 
   &__text-box {

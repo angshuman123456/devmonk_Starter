@@ -1,1 +1,25 @@
 <% layout('Boilerplate.ejs') %>
+<div class="careers-container">
+  <div class="form__container">
+      <div class="form--style">
+        <form>
+          <fieldset>
+            <legend>
+            <span class="number">1</span> Your Info</legend>
+            <input type="text" name="name" placeholder="Name *">
+            <input type="number" name="phone" placeholder="Contact Number *">
+            <input type="email" name="email" placeholder="Email *">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </fieldset>
+          <label for="resume">Resume/CV:</label>
+          <input id="resume" type="file">
+          <input type="submit" value="Apply" class="field7">
+        </form>
+      </div>
+    </div>
+</div>

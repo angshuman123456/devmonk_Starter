@@ -22,6 +22,7 @@ module.exports = {
         router.get('/whatIsHumtree', this.getWhatIsHumtree);
         router.get('/whyHumtree', this.getWhyHumtree);
         router.get('/howToGrowAHumtree', this.getHowToGrowAHumTree);
+        router.get('/contact', this.contact);
     },
     //abhi
     getCMS: function(req, res) {
@@ -84,5 +85,8 @@ module.exports = {
     },
     getHowToGrowAHumTree: function(req, res) {
         res.render('page/howToGrowAHumTree');
+    },
+    contact: function(req, res) {
+        res.render('page/contactus');
     },
 };

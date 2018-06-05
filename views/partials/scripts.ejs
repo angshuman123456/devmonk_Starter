@@ -26,13 +26,69 @@ window.onload = function(){
     $('.contact').show();
   });
 }
-
-
- 
 });
 </script>
+<script type="text/javascript">
+ function showStory(element) {
+  $('.story-1').css('display', 'none');
+  $('.story-2').css('display', 'none');
+  $('.story-3').css('display', 'none');
+  $('.story-4').css('display', 'none');
+  $('.story-5').css('display', 'none');
+  $('.story-6').css('display', 'none');
+   switch (element) {
+     case 1:
+      $('.story-1').css('display', 'block');
+      break;      
+     case 2:
+      $('.story-2').css('display', 'block');
+      break;      
+     case 3:
+      $('.story-3').css('display', 'block');
+      break;      
+     case 4:
+      $('.story-4').css('display', 'block');
+      break;      
+     case 5:
+      $('.story-5').css('display', 'block');
+      break;      
+     case 6:
+      $('.story-6').css('display', 'block');
+      break; 
+   }
+ }
+ showStory(1);
+ $('.stories-nav__bar').first().css('height', '10rem');
+ $('.stories-nav__bar').click(function(e) {
+   $(this).siblings().css('height', '3rem');
+   let id = e.target.id;
+   switch (id) {
+     case 'one-nav':
+        showStory(1);
+      break;
+     case 'two-nav':
+        showStory(2);
+      break;
+     case 'three-nav':
+        showStory(3);
+      break;
+     case 'four-nav':
+        showStory(4);
+      break;
+     case 'five-nav':
+        showStory(5);
+      break;
+     case 'six-nav':
+        showStory(6);
+      break;
+   }
 
+   $(this).css('height', '10rem');
+ });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/purejavascript.js"></script>
 <script src="js/removeFooter.js" type="text/javascript"></script>
 <script src="js/forms.js" type="text/javascript"></script>
 <script src="js/advisoryCouncil.js" type="text/javascript"></script>
+<script src="js/homepage.js" type="text/javascript"></script>

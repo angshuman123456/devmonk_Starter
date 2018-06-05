@@ -1,0 +1,10 @@
+.contact-us {
+  text-decoration: none;
+  color: $color-white;
+  
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
