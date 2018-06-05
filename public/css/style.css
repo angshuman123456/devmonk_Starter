@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: inherit; }
 
+body::-webkit-scrollbar {
+  display: none; }
+
 html {
   font-size: 62.5%; }
 
@@ -710,6 +713,61 @@ label {
 .event__date {
   padding-left: 1rem; }
 
+.flip {
+  -webkit-perspective: 800;
+  perspective: 800;
+  position: relative;
+  text-align: center; }
+
+.flip .flipcard.flipped {
+  -webkit-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+  background-color: #e4e4e4; }
+
+.flip .flipcard {
+  width: 100%;
+  height: 278px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  background-color: #07a97d;
+  border-radius: 3px; }
+
+.flip .flipcard .face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden !important;
+  z-index: 2; }
+
+.flip .flipcard .front {
+  width: 270px;
+  backface-visibility: hidden !important;
+  z-index: 1; }
+
+.flip .flipcard .img {
+  position: relaitve;
+  width: 270px;
+  height: 178px;
+  z-index: 1;
+  border: 2px solid #000; }
+
+.flip .flipcard .back {
+  padding: 10rem;
+  -webkit-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+  color: #000; }
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffff4;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  backface-visibility: hidden !important; }
+
 .row {
   max-width: 114rem !important;
   margin: 0 auto !important; }
@@ -1031,9 +1089,6 @@ label {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
-
-body::-webkit-scrollbar {
-  display: none; }
 
 .text-container {
   padding: 8rem 30rem;

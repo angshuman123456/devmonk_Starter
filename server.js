@@ -6,6 +6,10 @@ const path = require('path');
 // EXTERNAL MODULES
 const express = require('express');
 const engine = require('ejs-mate');
+const compression = require('compression');
+const helmet = require('helmet');
+const mongoose = require('mongoose');
+
 
 // OWN MODULES
 const homeController = require('./controllers/home');
@@ -16,6 +20,13 @@ setupExpress();
  * sets up express middleware
  */
 function setupExpress() {
+
+
+    mongoose.Promise = global.Promise;
+    mongoose.connect('mongodb://reltronx:A711961a!@ds119060.mlab.com:19060/humtree',(err)=>{
+        if(err) return console.log('connection error');
+    });
+
     // CREATING AN INSTACE OF EXPRESS
     const app = express();
     const port = process.env.PORT || 3000;
@@ -46,4 +57,7 @@ function configureExpress(app) {
 
     // MIDDLEWARES
     app.use(express.static(path.join(__dirname, 'public')));
+    app.use(helmet());
+    app.use(compression());
+
 }

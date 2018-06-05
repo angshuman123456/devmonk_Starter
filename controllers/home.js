@@ -1,5 +1,8 @@
 module.exports = {
     setRouting: function(router) {
+        //abhi
+        router.get('/cms', this.getCMS);
+
         router.get('/', this.getHomePage);
         router.get('/about', this.getAbout);
         router.get('/codeOfConduct', this.getCodeOfConduct);
@@ -20,6 +23,11 @@ module.exports = {
         router.get('/whyHumtree', this.getWhyHumtree);
         router.get('/howToGrowAHumtree', this.getHowToGrowAHumTree);
     },
+    //abhi
+    getCMS: function(req, res) {
+        res.render('page/cms');
+    },
+
     getHomePage: function(req, res) {
         res.render('page/home');
     },
