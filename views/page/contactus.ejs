@@ -2,16 +2,16 @@
 <div class="careers-container">
   <div class="form__container">
       <div class="form--style">
-        <form>
+        <form action="/postMessage" method="post">
           <fieldset>
             <legend>
             <span class="number">1</span> Your Info</legend>
-            <input type="text" name="name" placeholder="Name *">
-            <input type="number" name="phone" placeholder="Contact Number *">
+            <input type="text" name="name" placeholder="Name *" required>
+            <input type="number" name="phone" placeholder="Contact Number *" required>
             <input type="email" name="email" placeholder="Email *">
-            <textarea name="message" placeholder="Leave a message *"></textarea>
+            <textarea name="post" placeholder="Leave a message *" required></textarea>
           </fieldset>
-          <input type="submit" value="Apply" class="field7">
+          <input type="submit" value="Contact" class="field7">
         </form>
       </div>
     </div>

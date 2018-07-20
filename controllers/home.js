@@ -1,3 +1,8 @@
+const findAllBrochure = require('../helpers/brochures_mStore').findAllBrochure;
+const findAllMossaic = require('../helpers/mossaics_mStore').findAllMossaic;
+const findAllEvent = require('../helpers/events_mStore').findAllEvent;
+const postMessage = require('../helpers/messages_mStore').createMessage;
+
 module.exports = {
     setRouting: function(router) {
         //abhi
@@ -23,6 +28,7 @@ module.exports = {
         router.get('/whyHumtree', this.getWhyHumtree);
         router.get('/howToGrowAHumtree', this.getHowToGrowAHumTree);
         router.get('/contact', this.contact);
+        router.post('/postMessage', this.postMessage);
     },
     //abhi
     getCMS: function(req, res) {
@@ -48,16 +54,16 @@ module.exports = {
         res.render('page/stories');
     },
     getMosaic: function(req, res) {
-        res.render('page/mosaic');
+        findAllMossaic(req, res);
     },
     getVisionMission: function(req, res) {
         res.render('page/visionMission');
     },
     getEvents: function(req, res) {
-        res.render('page/events');
+        findAllEvent(req, res);
     },
     getBrochure: function(req, res) {
-        res.render('page/brochure');
+        findAllBrochure(req, res);
     },
     getTeam: function(req, res) {
         res.render('page/team');
@@ -88,5 +94,8 @@ module.exports = {
     },
     contact: function(req, res) {
         res.render('page/contactus');
+    },
+    postMessage: function(req, res) {
+        postMessage(req, res);
     },
 };

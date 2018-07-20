@@ -16,6 +16,12 @@ body::-webkit-scrollbar {
 html{
     //this defines what 1rem is i.e 10px
     font-size: 62.5%;
+    @include respond(phone) {
+        font-size: 50%;
+    };
+    @include respond(tab-port) {
+        font-size: 58%;
+    }
 }
 
 body{

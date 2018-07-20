@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -10,6 +27,12 @@ body::-webkit-scrollbar {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 58%; } }
 
 body {
   box-sizing: border-box;
@@ -298,6 +321,9 @@ body {
 .gallery__image--size-small {
   width: 25%;
   height: auto; }
+
+.gallery__link--color-primary {
+  color: #07a97d; }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1184,6 +1210,8 @@ label {
       display: inline-block;
       width: 100%;
       margin-right: 6rem; }
+    .section-home .partner__img--small {
+      width: 60%; }
     .section-home .partner__link:link, .section-home .partner__link:visited {
       text-decoration: none; }
   .section-home .home__left {
@@ -1287,11 +1315,11 @@ label {
   animation-delay: 20s; }
 
 .slideshow li:nth-child(4) {
-  background-image: url("../img/slider-images/img-4.jpg");
+  background-image: url("../img/slider-images/img-6.jpg");
   animation-delay: 30s; }
 
 .slideshow li:nth-child(5) {
-  background-image: url("../img/slider-images/img-5.jpg");
+  background-image: url("../img/slider-images/img-7.jpg");
   animation-delay: 40s; }
 
 @keyframes imageAnimation {

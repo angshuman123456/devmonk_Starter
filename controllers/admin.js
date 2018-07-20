@@ -1,34 +1,34 @@
-
-const aws = require('../helpers/AWSupload.js');
+const awsBrochure = require('../helpers/upload.js').uploadBrochure;
+const awsMosaic = require('../helpers/uploadM.js').uploadMosaic;
+const awsEvent = require('../helpers/uploadE.js').uploadEvent;
+const createBrochure = require('../helpers/brochures_mStore.js').createBrochure;
+const createMossaic = require('../helpers/mossaics_mStore.js').createMossaic;
+const createEvent = require('../helpers/events_mStore.js').createEvent;
+const fetchMessages = require('../helpers/messages_mStore').getMessages;
 
 module.exports = {
 
     setRouting: function(router) {
-        
-        router.post('/uploadFile',aws.Upload.any());
-
-        // router.post('/editMosaic',this.adminPost);
+        router.get('/getMessages', this.getMessages);
+        router.post('/editMossaic', awsMosaic.any(), this.storeDataForMossaic);
+        router.post('/editEvent', awsEvent.any(), this.storeDataForEvent);
+        router.post('/editBrochure', awsBrochure.any(), this.storeDataForBrochure);
     },
 
-    adminPage : (req,res) => {
-          
-           
-        res.render('admin/dashboard');
-
+    redirect: function(req, res) {
+        res.redirect('/cms.html');
     },
 
-    adminPost : (req,res) => {
-    
-        // const newClub = new Club();
-        // newClub.name = req.body.club;
-        // newClub.country = req.body.country;
-        // newClub.image = req.body.upload;
-
-        // newClub.save((err)=>{
-        //     if(err) return console.log(err);
-        //     res.render('admin/dashboard')
-        // })
+    storeDataForBrochure: function(req, res) {
+        createBrochure(req, res);
     },
-
-    
+    storeDataForMossaic: function(req, res) {
+        createMossaic(req, res);
+    },
+    storeDataForEvent: function(req, res) {
+        createEvent(req, res);
+    },
+    getMessages: function(req, res) {
+        fetchMessages(req, res);
+    }
 };

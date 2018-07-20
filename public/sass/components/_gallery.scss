@@ -6,7 +6,6 @@
     padding-left: 8rem;
     padding-right: 5rem;
     padding-bottom: 10rem;
-
 }
 .gallery__link,.gallery__link:link,.gallery__link:visited{
     display: block;
@@ -56,4 +55,8 @@ padding: 1rem;
 .gallery__image--size-small {
     width: 25%;
     height: auto;
+}
+
+.gallery__link--color-primary {
+    color: $color-primary;
 }
