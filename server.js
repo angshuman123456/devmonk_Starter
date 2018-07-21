@@ -23,7 +23,7 @@ setupExpress();
  */
 function setupExpress() {
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb://localhost:27017/humtree', (err) => {
+    mongoose.connect('mongodb://humtree:humtree123456@ds147411.mlab.com:47411/humtree', (err) => {
         if (err) return console.log('connection error');
     });
 
