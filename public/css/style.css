@@ -27,12 +27,15 @@ body::-webkit-scrollbar {
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 75em) {
     html {
-      font-size: 50%; } }
+      font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 58%; } }
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -146,6 +149,17 @@ body {
     font-weight: 100;
     letter-spacing: 2.5rem;
     animation: moveInLeft 0.8s ease-out .4s; }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--main {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 5rem;
+        letter-spacing: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 5rem;
+        letter-spacing: 1rem; } }
   .heading-primary--sub {
     display: block;
     text-decoration: none;
@@ -154,6 +168,16 @@ body {
     letter-spacing: 1.2rem;
     animation: moveInRight .8s ease-out .4s;
     margin-bottom: 3.6rem; }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--sub {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 1.3rem;
+        letter-spacing: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .8rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -208,25 +232,25 @@ body {
   background-repeat: no-repeat;
   height: 100vh; }
   .header--about {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/about-us.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/about-us.jpg"); }
   .header--advisory-council {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/advisory-council.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/advisory-council.jpg"); }
   .header--vision-mission {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/vision-mission.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/vision-mission.jpg"); }
   .header--code-of-conduct {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/code-of-conduct.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/code-of-conduct.jpg"); }
   .header--what-is-humtree {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/what-is-humtree.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/what-is-humtree.jpg"); }
   .header--why-plant-a-humtree {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/why-plant-a-humtree.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/why-plant-a-humtree.jpg"); }
   .header--rules-of-reimbursement {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url("../img/page-hero-images/Reimbursement.jpeg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/Reimbursement.jpeg"); }
   .header--how-humtree-grows {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/how-humtree-grows.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/how-humtree-grows.jpg"); }
   .header--how-to-plant-a-humtree {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/how-to-plant-a-humtree.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/how-to-plant-a-humtree.jpg"); }
   .header--team {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("../img/page-hero-images/team.jpg"); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url("https://s3.ap-south-1.amazonaws.com/humtreev1/team.jpg"); }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -262,6 +286,9 @@ body {
   width: 0%;
   height: 4px;
   z-index: 1900; }
+  @media only screen and (max-width: 56.25em) {
+    #scrollbar {
+      display: none; } }
 
 #scrollbar-bg {
   position: absolute;
@@ -298,6 +325,12 @@ body {
   text-align: center;
   background-color: #fffff4;
   padding: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .gallery__list-item {
+      width: 30%; } }
+  @media only screen and (max-width: 37.5em) {
+    .gallery__list-item {
+      width: 100%; } }
 
 .gallery__image {
   width: 100%;
@@ -842,30 +875,44 @@ label {
   display: none !important; }
 
 .row {
-  max-width: 114rem !important;
-  margin: 0 auto !important; }
+  max-width: 114rem;
+  margin: 0 auto; }
   .row::after {
     content: "";
     clear: both;
     display: table; }
   .row:not(:last-child) {
-    margin-bottom: 8rem !important; }
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row [class^="col-"] {
-    float: left !important; }
+    float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem !important; }
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem)/2) !important; }
+    width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2*6rem)/3) !important; }
+    width: calc((100% - 2*6rem)/3); }
   .row .col-2-of-3 {
-    width: calc(2*(100% - 2*6rem)/3 + 6rem) !important; }
+    width: calc(2*(100% - 2*6rem)/3 + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3*6rem)/4) !important; }
+    width: calc((100% - 3*6rem)/4); }
   .row .col-2-of-4 {
-    width: calc(2*(100% - 3*6rem)/4 + 6rem) !important; }
+    width: calc(2*(100% - 3*6rem)/4 + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3*(100% - 3*6rem)/4 + 2*6rem) !important; }
+    width: calc(3*(100% - 3*6rem)/4 + 2*6rem); }
 
 .navigation__checkbox {
   display: none; }
@@ -892,6 +939,12 @@ label {
   overflow: hidden;
   visibility: hidden;
   transition: all 400ms cubic-bezier(0.92, 0, 0.36, 0.81); }
+  @media only screen and (max-width: 75em) {
+    .navigation__nav {
+      width: 100vw; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__nav {
+      width: 100vw; } }
 
 .navigation__jumbo-item {
   width: 100%;
@@ -1109,6 +1162,12 @@ label {
   background-color: #07a97d;
   padding: 1rem 3rem;
   opacity: .89; }
+  @media only screen and (max-width: 75em) {
+    .contact {
+      width: 50%; } }
+  @media only screen and (max-width: 56.25em) {
+    .contact {
+      width: 50%; } }
   .contact__icon {
     float: right;
     font-size: 1.6rem;
@@ -1166,6 +1225,12 @@ label {
 .text-container {
   padding: 8rem 30rem;
   overflow-y: auto; }
+  @media only screen and (max-width: 75em) {
+    .text-container {
+      padding: 8rem 10rem; } }
+  @media only screen and (max-width: 75em) {
+    .text-container {
+      padding: 8rem 4rem; } }
   .text-container__paragraph {
     letter-spacing: .15rem;
     -webkit-hyphens: auto;
@@ -1304,22 +1369,22 @@ label {
   animation: imageAnimation 50s linear infinite; }
 
 .slideshow li:nth-child(1) {
-  background-image: url("../img/slider-images/img-1.jpg"); }
+  background-image: url("https://s3.ap-south-1.amazonaws.com/humtreev1/img-1.jpg"); }
 
 .slideshow li:nth-child(2) {
-  background-image: url("../img/slider-images/img-2.jpg");
+  background-image: url("https://s3.ap-south-1.amazonaws.com/humtreev1/img-2.jpg");
   animation-delay: 10s; }
 
 .slideshow li:nth-child(3) {
-  background-image: url("../img/slider-images/img-3.jpg");
+  background-image: url("https://s3.ap-south-1.amazonaws.com/humtreev1/img-3.jpg");
   animation-delay: 20s; }
 
 .slideshow li:nth-child(4) {
-  background-image: url("../img/slider-images/img-6.jpg");
+  background-image: url("https://s3.ap-south-1.amazonaws.com/humtreev1/img-6.jpg");
   animation-delay: 30s; }
 
 .slideshow li:nth-child(5) {
-  background-image: url("../img/slider-images/img-7.jpg");
+  background-image: url("https://s3.ap-south-1.amazonaws.com/humtreev1/img-7.jpg");
   animation-delay: 40s; }
 
 @keyframes imageAnimation {
@@ -1351,8 +1416,11 @@ label {
 
 /* clear fix */
 .grid {
-  width: 114rem;
+  max-width: 114rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .grid {
+      max-width: auto; } }
 
 .grid:after {
   content: '';
@@ -1366,6 +1434,9 @@ label {
   width: 30rem;
   height: 50rem;
   margin: 3rem 3rem; }
+  @media only screen and (max-width: 75em) {
+    .grid-item {
+      font-size: 56.25%; } }
 
 .careers-container {
   margin-top: 15rem; }
@@ -1375,20 +1446,33 @@ label {
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (max-width: 37.5em) {
+    .stories-container {
+      margin-top: 20rem; } }
 
 .stories-main-heading {
   font-size: 9rem;
   font-weight: 300;
   color: #999; }
+  @media only screen and (max-width: 37.5em) {
+    .stories-main-heading {
+      font-size: 6rem; } }
 
 .stories-sub-heading {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .stories-sub-heading {
+      font-size: 1.3rem;
+      letter-spacing: .3rem; } }
 
 .stories-content {
   color: #777; }
+  @media only screen and (max-width: 37.5em) {
+    .stories-content {
+      padding: 1rem; } }
 
 .stories-image {
   width: 30%;
@@ -1398,15 +1482,25 @@ label {
   padding: 2rem; }
   .stories-image img {
     width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .stories-image {
+      width: 100%; } }
 
 .story-main {
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .story-main {
+      padding: 3rem; } }
 
 .stories-nav {
   position: fixed;
   right: -3rem;
   top: 30rem;
   width: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .stories-nav {
+      right: 0rem;
+      top: 40rem; } }
   .stories-nav__bar {
     width: 0.8rem;
     height: 3rem;

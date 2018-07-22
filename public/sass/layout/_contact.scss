@@ -9,6 +9,13 @@
     padding: 1rem 3rem;
     opacity: .89;
 
+    @include respond(tab-land) { // width < 1200?
+       width: 50%;
+    }
+    
+    @include respond(tab-port) { // width < 900?
+      width: 50%;
+    }
     &__icon{
         float: right;
         font-size: 1.6rem;

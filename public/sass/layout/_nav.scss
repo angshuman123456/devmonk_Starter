@@ -25,6 +25,14 @@
         overflow: hidden;
         visibility: hidden;
         transition: all 400ms cubic-bezier(.92, 0, .36, .81); // position: relative;
+        @include respond(tab-land) { // width < 1200?
+            width:100vw; //1 rem = 9px, 9/16 = 50%
+        }
+        
+        @include respond(tab-port) { // width < 900?
+            width:100vw;
+             //1 rem = 8px, 8/16 = 50%
+        }
     }
     &__jumbo-item {
         width: 100%;

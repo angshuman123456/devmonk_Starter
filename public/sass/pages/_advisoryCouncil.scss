@@ -5,8 +5,12 @@
 
 /* clear fix */
 .grid {
-  width: 114rem;
+  max-width: 114rem;
   margin: 0 auto;
+  @include respond(tab-land) { // width < 1200?
+  max-width: auto;
+}
+
 }
 
 .grid:after {
@@ -23,4 +27,8 @@
   width: 30rem;
   height: 50rem;
   margin: 3rem 3rem;
+  @include respond(tab-land) { // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+}
+
 }

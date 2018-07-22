@@ -26,6 +26,14 @@ position: relative;
 text-align: center;
 background-color: $color-white;
 padding: 2rem;
+@include respond(tab-port) { // width < 1200?
+    width: 30%;
+}
+
+@include respond(phone) { // width < 900?
+    width: 100%;
+     //1 rem = 8px, 8/16 = 50%
+}
 }
 
 .gallery__image{

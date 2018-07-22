@@ -4,6 +4,14 @@
 .text-container {
   padding: 8rem 30rem;
   overflow-y: auto;
+  @include respond(tab-land) { // width < 1200?
+    padding: 8rem 10rem;
+}
+  @include respond(tab-land) { // width < 1200?
+    padding: 8rem 4rem;
+}
+
+
 
   &__paragraph {
     letter-spacing: .15rem;

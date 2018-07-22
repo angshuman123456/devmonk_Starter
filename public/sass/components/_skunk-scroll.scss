@@ -16,6 +16,11 @@
 
   z-index: 1900;
 
+
+@include respond(tab-port) { // width < 900?
+    display: none; //1 rem = 8px, 8/16 = 50%
+}
+
 }
 #scrollbar-bg {
 

@@ -47,6 +47,18 @@ body {
         font-weight: 100;
         letter-spacing: 2.5rem;
         animation: moveInLeft 0.8s ease-out .4s;
+        @include respond(tab-land) { // width < 1200?
+            font-size: 6rem; //1 rem = 9px, 9/16 = 50%
+        }
+        
+        @include respond(tab-port) { // width < 900?
+            font-size: 5rem; //1 rem = 8px, 8/16 = 50%
+            letter-spacing: 1.5rem;
+        }
+        @include respond(phone) { // width < 900?
+            font-size: 5rem; //1 rem = 8px, 8/16 = 50%
+            letter-spacing: 1rem;
+        }
     }
     &--sub {
         display: block;
@@ -56,6 +68,19 @@ body {
         letter-spacing: 1.2rem;
         animation: moveInRight .8s ease-out .4s;
         margin-bottom: 3.6rem;
+
+        @include respond(tab-land) { // width < 1200?
+            font-size: 1.5rem; //1 rem = 9px, 9/16 = 50%
+        }
+        
+        @include respond(tab-port) { // width < 900?
+            font-size: 1.3rem; //1 rem = 8px, 8/16 = 50%
+            letter-spacing: 1rem;
+        }
+        @include respond(phone) { // width < 900?
+         
+            letter-spacing: .8rem;
+        }
     }
 }
 
