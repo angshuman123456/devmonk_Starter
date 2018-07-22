@@ -15,6 +15,7 @@ const bodyParser = require('body-parser');
 // OWN MODULES
 const homeController = require('./controllers/home');
 const admin = require('./controllers/admin');
+const mongoCredentials = require('./config').mongoCredentials;
 
 setupExpress();
 
@@ -23,7 +24,7 @@ setupExpress();
  */
 function setupExpress() {
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb://humtree:humtree123456@ds147411.mlab.com:47411/humtree', (err) => {
+    mongoose.connect(mongoCredentials.url, (err) => {
         if (err) return console.log('connection error');
     });
 
