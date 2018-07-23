@@ -7,11 +7,6 @@ AWS.config = new AWS.Config();
 AWS.config.accessKeyId = awsCredentials.accessKeyId;
 AWS.config.secretAccessKey = awsCredentials.secretAccessKey;
 AWS.config.region = awsCredentials.region;
-// AWS.config.update({
-//   accessKeyId: 'AKIAJMGCHLNRLK43KTGQ',
-//   secretAcessKey: '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',
-//   region: 'ap-south-1',
-// });
 
 const S3 = new AWS.S3({});
 
